@@ -1,0 +1,401 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+html{
+	font-size: 14px;
+}
+body{
+	font-size: 0px;
+	padding-top: 40px;
+}
+#menu{
+	font-size: 1.2rem;
+	background-color: rgba( 30, 58,70,.5);
+	width: 100%;
+	text-align: center;
+	position: fixed;
+	top:0px;
+	z-index: 1;
+}
+
+.opcionprincipal{
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	padding: 10px 50px;
+	position: relative;
+}
+
+.opcionprincipal:hover{
+background-color:rgba(255, 255, 255, .4);
+
+}
+.opcionprincipalsubmenu{
+text-decoration: none;
+color:#fff;
+}
+.subMenu{
+	width:350px;
+	background-color:rgba(30, 58, 70, .8);
+	text-align:1px solid #fff;
+	box-shadow:0px 5px #1e971e;
+	position: absolute;
+	left:0px;
+	top:38px;
+	overflow:hidden ;
+	opacity:0;
+	height:0px;
+	}
+	.opcionprincipal:hover > .subMenu{
+	
+	height:auto;
+	opacity:1;
+	
+	}
+	
+	.subMenu{
+	
+	transition:all .4s ease-in-out;
+	}
+.opcionSubMenu{
+display:inline-block;
+text-decoration:none;
+color:#fff;
+width:40%;
+padding:4% 0%;
+margin-left:6%;
+text-align:center;
+vertical-align:middle;
+
+cursor: pointer;
+
+}
+#imagen{
+width:70px;
+height:50px;
+}
+.seccion{
+	width:100%;
+	height:700px;
+	overflow: hidden;
+
+}
+#Quienessomos{
+	background-color: green;
+	position: relative;
+
+}
+
+.slider{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+}
+
+.slide{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 700px;
+}
+
+.slide:nth-child(1){
+	background-image: url(../Imagenes/f1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	animation: emulador1 20s infinite;
+}
+
+.slide:nth-child(2){
+	background: url(../Imagenes/f2.jpg) no-repeat fixed;
+	background-size: cover;
+	animation: emulador2 20s infinite;
+}
+
+.slide:nth-child(3){
+	background: url(../Imagenes/f3.jpg) no-repeat fixed;
+	background-size: cover;
+	animation: emulador3 20s infinite;
+}
+
+.slide:nth-child(4){
+	background: url(../Imagenes/f4.jpg) no-repeat fixed;
+	background-size: cover;
+	animation: emulador4 20s infinite;
+}
+
+#empresa{
+	font-size: 6rem;
+    font-family: Mistral, "Comic Sans Ms";
+    color: #f00;
+    text-shadow: 0px 4px 1px #006F00;/*sombra letras*/
+    letter-spacing: 4px; /*espacio entre letras */
+    position: relative;
+    top: 35%;
+    left: 60%;
+    padding-top: 10px;
+    padding-left: 200px;
+    border-radius: 0px 10px; /*borde*/
+    background-color: rgba(255,225,255,0.5);
+    box-shadow: -10px 10px 25px #000; /*sombra*/
+    }
+
+    #logo{
+    	position: absolute;
+    	top: -80px;
+    	left: -20px;
+    	animation: mueveLogo 2s linear 1; /*de forma lineal 1 vez*/
+    }
+
+#Imagenes{
+	background: url(../imagenes/f5.jpg) no-repeat left top;
+	background-size: 100% 210%;
+
+}
+#equipo{
+	
+	background: url(../imagenes/fondo4.jpg) no-repeat left center fixed;
+    background-color: rgba(243,195,108,0.5);
+    background-size: 54% 100%;
+    font-size: 1rem;
+}
+
+#equipo p{
+	position: relative;
+	top: 20%;
+	left: 55%;
+	width: 40%;
+	text-align: justify;
+}
+
+#equipo article{
+	position: relative;
+	top: 25%;
+	left: 55%;
+	width: 40%;
+	
+}
+.producto{
+	width: 250px;
+	height: 250px;
+	float: left;
+	overflow: hidden;
+	margin-top: 15px;
+	margin-left: 15px;
+	text-align: center;
+    box-shadow: 0px 15px 15px -10px #000;
+    position: relative;
+
+}
+
+.producto img{
+	width: 250px;
+	height: 250px;
+}
+
+.producto h2{
+	font-size: 1.1rem;
+	color: white;
+	text-transform: uppercase;/*convertir a mayusculas*/
+	position: absolute;
+	top: 30px;
+	left: 0px;
+	width: 100%;
+	background-color: rgba( 0,0,0,0.8);
+	padding: 10px;
+	opacity: 0;
+	transform: translateY(-100px);
+
+}
+
+.producto figcaption{
+	position: absolute;
+	top: 110px;
+	left: 0px;
+	width: 100%;
+	background-color: rgba(255,225,255,0.8);
+	font-style: italic; /*cursiva*/
+	font-size: 1rem;
+	padding: 30px;
+	opacity: 0;
+	transform: translateY(100px);
+}
+.producto:hover h2, .producto:hover figcaption{
+opacity: 1;
+transform: translateY(0px);
+}
+
+.producto:hover figcaption{
+	transition-delay: 0.1s;
+}
+
+#Videos{
+	background-color: orange;
+
+}
+
+#formulario{
+	width: 500px;
+	position: relative;
+	top: 10%;
+	left: 15%;
+	padding: 10px;
+	text-align: center;
+	background-color: rgba(255,255,255,0.7);
+	border: 2px solid purple;
+	font-size: 0.8rem;
+
+}
+
+#formulario legend{
+font-size: 1.5rem;
+color: #fff;
+background-color: #205;
+padding:2px 10px;
+
+}
+
+input, textarea, select{
+height: 28px;
+width: 85%;
+border: 1px solid #666;
+border-radius: 10px;
+background-color: rgba(222,222,222,0.9);
+background-repeat: no-repeat;
+padding: 5px;
+padding-left: 35px;
+margin-top: 3px;
+color: #333;
+font-size: 0.8rem;
+font-family: Arial;
+}
+input[type="email"] {
+	background-image: url(../iconos/mail_icon.png);
+	background-position: 5px 2px;
+}
+input[type="password"] {
+	background-image: url(../iconos/id_icon.png);
+	background-position: 5px 2px;
+}
+input[type="tel"] {
+	background-image: url(../iconos/telefono_icon.png);
+	background-position: 5px 2px;
+}
+input[type="text"] {
+	background-image: url(../iconos/mensaje_icon.png);
+	background-position: 5px 2px;
+}
+input[type="number"] {
+	background-image: url(../iconos/telefono_icon.png);
+	background-position: 5px 2px;
+
+
+}
+input[type="file"] {
+	background-image: url(../iconos/asunto_icon.png);
+	background-position: 5px 2px;
+}
+textarea{
+	height: 100px;
+}
+
+label{
+	margin: 5px auto;
+	width: 80%;
+	font-size: 0.8rem;
+	display: block;
+	color: red;
+	font-family: Arial;
+	text-align: center;
+}
+
+input[type="radio"], input[type="checkbox"]{
+width: 20px;
+background-color: transparent;
+margin: 0px 10px;
+padding: 0px;
+
+}
+
+input[type="submit"], input[type="button"]{
+background-color: #223659;
+width: 100px;
+color: #fff;
+border-radius: 0px 10px;
+margin: 10px;
+padding-left: 0px;
+cursor: pointer; /*manita arriba al pasar el cursor*/
+}
+
+input[type="submit"]:hover, input[type="button"]:hover{
+border: 1px solid #fff;
+background-color: #047;
+color: pink;
+}
+
+input:focus, textarea:focus, select:focus{
+	border: 1px solid #ff0;
+	background-color: #326;
+	color: #fff;
+}
+
+footer{
+	background-color: pink;
+	height: 200px;
+}
+
+@keyframes emulador1{
+	0%, 100%{opacity: 1;}
+	25%, 50%, 75%{opacity: 0;}
+}
+
+@-webkit-keyframes emulador1{
+	0%, 100%{opacity: 1;}
+	25%, 50%, 75%{opacity: 0;}
+}
+
+@keyframes emulador2{
+	25%{opacity: 1;}
+	0%, 50%, 75%, 100%{opacity: 0;}
+}
+
+@-webkit-keyframes emulador2{
+	25%{opacity: 1;}
+	0%, 50%, 75%, 100%{opacity: 0;}
+}
+
+@keyframes emulador3{
+	50%{opacity: 1;}
+	0%, 25%, 75%, 100%{opacity: 0;}
+}
+
+@-webkit-keyframes emulador3{
+	50%{opacity: 1;}
+	0%, 25%, 75%, 100%{opacity: 0;}
+}
+
+@keyframes emulador4{
+	75%{opacity: 1;}
+	0%, 25%, 50%, 100%{opacity: 0;}
+}
+
+@-webkit-keyframes emulador4{
+	75%{opacity: 1;}
+	0%, 25%, 50%, 100%{opacity: 0;}
+}
+@keyframes mueveLogo{
+	from{
+		top:-100px;
+		opacity: 0;
+	}
+	to{
+		top: -80px;
+		opacity: 1;
+	}
+}

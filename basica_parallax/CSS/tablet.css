@@ -1,0 +1,16 @@
+@media screen and (max-width:800px){/*condicion para los cambios*/
+	
+
+body{
+	padding-top:0px;
+}
+
+
+
+.subMenu{
+	display: none;
+}
+
+
+
+}

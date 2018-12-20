@@ -1,0 +1,38 @@
+@media screen and (max-width:480px){/*condicion para los cambios*/
+	
+
+
+#menu{
+	
+	background-color:rgba(30, 58, 70, 1);
+	width:220px;
+	left: -220px;
+	height:100%;
+	}
+
+#menu:hover{
+	left: 0px;
+}
+#opcionSmartphone{
+	display: block;
+	width: 50px;
+	height: 50px;
+	background-color: #f00;
+	color: #fff;
+	line-height: 50px;
+	position: absolute;
+	right: -70px;
+	top: 0px;
+
+}
+#opcionSmartphone:hover{
+	background-color: #fff;
+	color: #f00;
+}
+.opcionPrincipal{
+	display:block;
+	padding:10px 0px;
+	position:relative;
+}
+
+
